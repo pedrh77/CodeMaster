@@ -1,4 +1,5 @@
-﻿using Masters.DOMAIN.Response;
+﻿using Masters.DOMAIN.Request;
+using Masters.DOMAIN.Response;
 using Refit;
 
 namespace Masters.SERVICES.Services.BLL
@@ -9,6 +10,9 @@ namespace Masters.SERVICES.Services.BLL
         Task<ApiResponse<GetCalculationResponse>> ADPGetcalculation();
 
 
+        [Post("/api/v1/submit-task")]
+        Task ADPPostCalculation(PostCalculationRequest);
     }
 
 }
+
