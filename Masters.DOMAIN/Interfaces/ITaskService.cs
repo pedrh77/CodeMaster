@@ -1,7 +1,10 @@
-﻿namespace Masters.DOMAIN.Interfaces
+﻿using Masters.DOMAIN.Response;
+
+namespace Masters.DOMAIN.Interfaces
 {
     public interface ITaskService
     {
-         Task TaskGetOperationCalculate();
+        Task<GetCalculationResponse> TaskGetOperation();
+        Task TaskGetOperationCalculate();
     }
 }

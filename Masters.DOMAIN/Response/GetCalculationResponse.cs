@@ -4,9 +4,9 @@ namespace Masters.DOMAIN.Response
 {
     public class GetCalculationResponse
     {
-        [JsonProperty("id")] public string id { get; set; }
-        [JsonProperty("operation")] public string operation { get; set; }
-        [JsonProperty("left")] public long left { get; set; }
-        [JsonProperty("right")] public long right { get; set; }
+        [JsonProperty("id")] public Guid id { get; set; }
+        [JsonProperty("operation")] public string? operation { get; set; }
+        [JsonProperty("left")] public double left { get; set; }
+        [JsonProperty("right")] public double right { get; set; }
     }
 }

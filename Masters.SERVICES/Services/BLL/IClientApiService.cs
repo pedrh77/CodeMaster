@@ -11,7 +11,7 @@ namespace Masters.SERVICES.Services.BLL
 
 
         [Post("/api/v1/submit-task")]
-        Task ADPPostCalculation(PostCalculationRequest);
+        Task<ApiResponse<GetCalculationResponse>> ADPPostCalculation(PostCalculationRequest postCalculationRequest);
     }
 
 }

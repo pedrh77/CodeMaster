@@ -43,5 +43,6 @@ WebApplicationBuilder RefitConfiguation(WebApplicationBuilder builder)
 WebApplicationBuilder IdependencyInjections(WebApplicationBuilder builder)
 {
     builder.Services.AddScoped<ITaskService, TaskService>(); // Add Injection of Interface TaskService
+    builder.Services.AddScoped<IApiResultsService, ApiResultsService>(); // Add Injection of Interface TaskService
     return builder;
 }

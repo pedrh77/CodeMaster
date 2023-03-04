@@ -13,7 +13,15 @@ namespace Masters.API.Controllers
             _taskService = taskService;
         }
 
-        [HttpGet]
+        [HttpGet("/Get/Operation")]
+        public async Task<IActionResult> TaskGetOperation()
+        {
+            var teste = await _taskService.TaskGetOperation();
+            return Ok(teste);
+
+        }
+
+        [HttpGet("/Execute/Operation")]
         public async Task<IActionResult> TaskGetOperationCalculate()
         {
             await _taskService.TaskGetOperationCalculate();
