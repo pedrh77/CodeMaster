@@ -51,7 +51,7 @@ namespace Masters.SERVICES.Services.DAL
             if (requestGetOperation.operation == "addition") return (requestGetOperation.left + requestGetOperation.right);
             if (requestGetOperation.operation == "subtraction") return (requestGetOperation.left - requestGetOperation.right);
             if (requestGetOperation.operation == "multiplication") return (requestGetOperation.left * requestGetOperation.right);
-            throw new Exception("[CheckExecuteOperation] Operation Not Found");
+            throw new KeyNotFoundException("[CheckExecuteOperation] Operation Not Found");
         }
 
     }
