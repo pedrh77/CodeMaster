@@ -6,19 +6,22 @@ namespace Masters.API.Controllers
     [ApiController, Route("[controller]")]
     public class TaskController : ControllerBase
     {
-        public ITaskService _taskService;
+        private ITaskService _taskService;
+        private readonly ILogger _logger;
 
-        public TaskController(ITaskService taskService)
+
+        public TaskController(ITaskService taskService, ILogger logger)
         {
             _taskService = taskService;
+            _logger = logger;
         }
 
         [HttpGet("/Get/Operation")]
         public async Task<IActionResult> TaskGetOperation()
         {
-            var teste = await _taskService.TaskGetOperation();
-            return Ok(teste);
-
+            _logger.LogDebug("[/Get/Operation] Interation");
+            var responseGetOpration = await _taskService.TaskGetOperation();
+            return Ok(responseGetOpration);
         }
 
         [HttpGet("/Execute/Operation")]
