@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masters.API", "Masters.API\Masters.API.csproj", "{0B6EF93D-DBB1-425D-9C53-8E0BB52DF518}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Masters.API", "Masters.API\Masters.API.csproj", "{0B6EF93D-DBB1-425D-9C53-8E0BB52DF518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masters.DOMAIN", "Masters.DOMAIN\Masters.DOMAIN.csproj", "{706343C8-659B-4FFC-9949-80C118834D6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Masters.DOMAIN", "Masters.DOMAIN\Masters.DOMAIN.csproj", "{706343C8-659B-4FFC-9949-80C118834D6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masters.INFRA", "Masters.INFRA\Masters.INFRA.csproj", "{A3D51888-C434-4E2D-A170-6491A1675B6D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masters.SERVICES", "Masters.SERVICES\Masters.SERVICES.csproj", "{AAB96571-7FDE-4569-A68F-57922891440D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Masters.SERVICES", "Masters.SERVICES\Masters.SERVICES.csproj", "{AAB96571-7FDE-4569-A68F-57922891440D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{706343C8-659B-4FFC-9949-80C118834D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{706343C8-659B-4FFC-9949-80C118834D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{706343C8-659B-4FFC-9949-80C118834D6F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3D51888-C434-4E2D-A170-6491A1675B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3D51888-C434-4E2D-A170-6491A1675B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3D51888-C434-4E2D-A170-6491A1675B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3D51888-C434-4E2D-A170-6491A1675B6D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAB96571-7FDE-4569-A68F-57922891440D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAB96571-7FDE-4569-A68F-57922891440D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB96571-7FDE-4569-A68F-57922891440D}.Release|Any CPU.ActiveCfg = Release|Any CPU
